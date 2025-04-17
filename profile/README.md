@@ -49,7 +49,7 @@
 |<img width="478" alt="landing" src="https://github.com/user-attachments/assets/3ea54382-ab58-4715-bfd9-f2a27d3e4760" />|
 
 ## 🌟 성과
-- 이용자 수 150명 이상 달성 📈
+- 이용자 수 200명 이상 달성 📈
 
 ## 🫂 팀원 소개
 |박경범|오상하|우성문|김서로|신성우|이지운|
