@@ -1,6 +1,6 @@
 # 🐎 그런데 말입니다
 실제 한국마사회의 경주마 데이터에 기반한 2D 도트 그래픽 경마 게임 👾  
-  
+
 - [짜릿한 경마의 세계로! (서비스 링크)](https://j12a606.p.ssafy.io) 🎮  
 - [영상 포트폴리오 시청](https://youtu.be/BNAXOQ2jusE) 🎥  
 
@@ -54,7 +54,7 @@
 ## 🫂 팀원 소개
 |박경범|오상하|우성문|김서로|신성우|이지운|
 |:--:|:--:|:--:|:--:|:--:|:--:|
-|![박경범](https://github.com/user-attachments/assets/c97ccbc9-beec-46d6-aff8-589af45bab4e)<br />BE Leader <br /> <sub>총괄 팀장<sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/Pkb1998)|![오상하](https://github.com/user-attachments/assets/14e97402-e4d9-4a34-9d2d-61b467f53896)<br />BE <br /> <sub>Data Analysis</sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/tkdgk1204)|![우성문](https://github.com/user-attachments/assets/0652388e-a12e-45a2-a776-260770cfac2a)<br />BE <br /> <sub>Infra</sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/tjdansw)|![김서로](https://github.com/user-attachments/assets/681af544-3b2b-4e60-9d0f-3a904aba86c8)<br />FE Leader <br /> <sub>Design</sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/okxooxoo)|![신성우](https://github.com/user-attachments/assets/2b0e6ff4-4fac-48e3-81da-75c3725bdb83)<br />FE <br /> <sub>Design</sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/DeongGu)|![이지운](https://github.com/user-attachments/assets/81d8d786-bf89-4897-8f38-faa6d2a251ec)<br />FE <br /> <sub>Mobile</sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/isemae)|
+|![박경범](https://github.com/user-attachments/assets/c97ccbc9-beec-46d6-aff8-589af45bab4e)<br />BE Leader <br /> <sub>총괄 팀장<sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/kyoungbeom)|![오상하](https://github.com/user-attachments/assets/14e97402-e4d9-4a34-9d2d-61b467f53896)<br />BE <br /> <sub>Data Analysis</sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/tkdgk1204)|![우성문](https://github.com/user-attachments/assets/0652388e-a12e-45a2-a776-260770cfac2a)<br />BE <br /> <sub>Infra</sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/tjdansw)|![김서로](https://github.com/user-attachments/assets/681af544-3b2b-4e60-9d0f-3a904aba86c8)<br />FE Leader <br /> <sub>Design</sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/okxooxoo)|![신성우](https://github.com/user-attachments/assets/2b0e6ff4-4fac-48e3-81da-75c3725bdb83)<br />FE <br /> <sub>Design</sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/DeongGu)|![이지운](https://github.com/user-attachments/assets/81d8d786-bf89-4897-8f38-faa6d2a251ec)<br />FE <br /> <sub>Mobile</sub> <br /> [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=flat&logo=github&logoColor=white)](https://github.com/isemae)|
 
 ## 🛠️ 기술 스택
 |BE|![Java](https://img.shields.io/badge/Java-%234D7896.svg?style=flat&logo=java&logoColor=white) ![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white) ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat&logo=gradle&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat&logo=redis&logoColor=white) ![Apache Hadoop](https://img.shields.io/badge/Hadoop-66CCFF?style=flat&logo=apache-hadoop&logoColor=black)|
@@ -80,3 +80,18 @@ STOMP의 `subscribe` 함수는 구독 시점이 중요하기 때문에 컴포넌
   
 한편, 라우팅 시에도 실시간 정보를 유지하기 위해 라우터 쿼리나 상태를 통해 정보를 전달하는 구조를 도입했습니다.  
 이를 통해 페이지 간 이동하거나 재접속 할 때도 실시간 연결 상태와 필요한 데이터를 유지할 수 있었습니다.  
+
+### ➋ 말 무작위 움직임
+
+목장 페이지 속 살아 있는 말을 나타내기 위해 Image Sprite을 활용하여 여러 마리의 말이 랜덤한 위치로 이동하도록 구현했습니다.  
+상하좌우 방향으로 이동하거나 정지하는 말 객체를 표현하기 위해 총 8가지 말의 상태를 Tailwind CSS 전역 클래스로 정의했습니다.  
+이를 통해 다른 페이지에서 동일한 클래스를 불필요하게 정의하지 않고 말 클래스를 재사용할 수 있도록 설계하였습니다.  
+  
+|HorseRun Right|HorseRun Left|HorseRun Up|HorseRun Down|HorseIdle Right|HorseIdle Left|HorseIdle Up|HorseIdle Down|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|![horseRunRight](https://github.com/user-attachments/assets/bb54e8a8-4a3d-40c7-9d5a-58173b83bfec)|![horseRunLeft](https://github.com/user-attachments/assets/4460ee04-3bbd-44e9-8e0e-c3a5f902d978)|![horseRunUp](https://github.com/user-attachments/assets/9d7a6954-4ccf-4326-9e93-9eaa75c8e559)|![horseRunDown](https://github.com/user-attachments/assets/5a3590a5-a471-442d-816b-f81f4c2becbf)|![horseIdleRight](https://github.com/user-attachments/assets/51ed6cf5-fed0-4c4a-9eec-86c4b906755f)|![horseIdleLeft](https://github.com/user-attachments/assets/59cb421a-9ae0-4d01-9912-b0d25e77ba79)|![horseIdleUp](https://github.com/user-attachments/assets/abc4e42b-2f06-4985-bee4-541fe360d35e)|![horseIdleDown](https://github.com/user-attachments/assets/fb695967-c47b-4823-bb6b-bdcc00b279de)|
+  
+각각의 말이 이동하면서 서로 부딪히지 않도록 모든 말의 좌표와 바라보는 방향을 Context API을 통해 전역적으로 관리하였습니다.  
+`random`, `setTimeout` 함수를 재귀적으로 활용하여 각 말이 랜덤한 주기로 이동하도록 구현하였으며,  
+주변에 다른 말이나 장애물이 감지되면 정지하거나 방향을 전환하도록 설계하였습니다.  
+이러한 방식으로 목장페이지에서 모든 말에 자연스러운 움직임을 부여할 수 있었습니다.  
