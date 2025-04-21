@@ -95,3 +95,18 @@ STOMP의 `subscribe` 함수는 구독 시점이 중요하기 때문에 컴포넌
 `random`, `setTimeout` 함수를 재귀적으로 활용하여 각 말이 랜덤한 주기로 이동하도록 구현하였으며,  
 주변에 다른 말이나 장애물이 감지되면 정지하거나 방향을 전환하도록 설계하였습니다.  
 이러한 방식으로 목장페이지에서 모든 말에 자연스러운 움직임을 부여할 수 있었습니다.  
+
+### ➌ Suspense & Error Boundary 도입
+사용자 경험 개선과 효율적인 에러 처리를 위해 본 프로젝트에서 Suspense와 Error Boundary을 도입하였습니다.  
+또한 체계적으로 오류를 식별하고 처리하기 위해 다양한 커스텀 에러 코드를 정의하였으며,  
+코인이 부족할 때 말을 구매하는 경우나 블랙 리스트에 등록된 유저가 경마장에 참가하는 경우 등 다양한 예외 상황에 대처하였습니다.  
+  
+개발 과정에서 데이터 페칭을 렌더링 이후 비동기적으로 처리할 경우 Suspense가 로딩 상태를 감지하지 못하는 문제가 발생했습니다.  
+이를 해결하기 위해 TanStack Query의 `useSuspenseQuery` hook을 사용하여 렌더링과 동시에 fetch 작업이 이루어질 수 있도록 구현했습니다.  
+  
+또한 `ErrorBoundary`가 렌더링 이후 발생하는 에러를 감지하지 못하는 한계를 극복하고자,  
+컴포넌트 렌더링 중 error을 throw 하여 `ErrorBoundary`가 이를 포착하고 fallback UI을 표시할 수 있도록 구현하였습니다.  
+
+|Error Screen|
+|:--:|
+|![image](https://github.com/user-attachments/assets/a85d5062-e7e5-47fb-aa99-c293b0dc1e94)|
